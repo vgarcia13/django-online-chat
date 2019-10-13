@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="mesgs">
+        <div class="msg_history" id="msg_history"></div>
+        <div class="input_msg_write">
+            <input type="text" class="write_msg" placeholder="Type a message" id="chat-message-input"/>
+            <button class="msg_send_btn" type="button">
+                <i class="fa fa-paper-plane-o" aria-hidden="true" id="chat-message-submit"></i>
+            </button>
+        </div>
+    </div>
+    {% include "snippets/welcomeModal.html" %}
+    {% include "snippets/configModal.html" %}
+{% endblock %}
+
+{% block js %}
+    <script>
+        var roomName = {{ room_name_json }};
+    </script>
+{% endblock %}
