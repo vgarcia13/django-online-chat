@@ -1,2 +1,2 @@
-web: gunicorn online_chat.wsgi
+web: daphne -p 8001 online_chat.asgi:application
 worker: python worker.py
