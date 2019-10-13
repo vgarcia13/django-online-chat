@@ -5,8 +5,10 @@ var configModal = $('#configModal');
 
 var chatHistory = $('#msg_history');
 
-var chatSocket = new WebSocket(
-    'ws://' + window.location.host +
+var ws_scheme = window.location.protocol === "https:" ? "wss" : "ws";
+
+var chatSocket = new ReconnectingWebSocket(
+    ws_scheme + '://' + window.location.host +
     '/ws/chat/' + roomName + '/');
 
 chatSocket.onmessage = function (e) {
