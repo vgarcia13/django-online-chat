@@ -1,2 +1,2 @@
-web: daphne -p 8001 online_chat.asgi:application
+web: daphne online_chat.asgi:application --port $PORT --bind 0.0.0.0 -v2
 worker: python worker.py
