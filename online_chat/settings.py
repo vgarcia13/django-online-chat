@@ -15,6 +15,8 @@ SECRET_KEY = "@jswu0vp8^w_ygi^%!jc28qer-wn2(xinaf)g9956$prlxo665"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+LOCAL = not os.environ.get('ON_HEROKU', False)
+
 
 # Application definition
 
@@ -64,11 +66,13 @@ TEMPLATES = [
 WSGI_APPLICATION = 'online_chat.wsgi.application'
 ASGI_APPLICATION = "online_chat.routing.application"
 
+REDIS_URL = 'redis' if LOCAL else os.environ.get('REDISTOGO_URL')
+
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts": [('redis', 6379)],
+            "hosts": [(REDIS_URL, 6379)],
         },
     },
 }

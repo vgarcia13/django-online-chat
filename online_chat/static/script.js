@@ -6,7 +6,7 @@ var configModal = $('#configModal');
 var chatHistory = $('#msg_history');
 
 var chatSocket = new WebSocket(
-    'ws://' + window.location.host +
+    'wss://' + window.location.host +
     '/ws/chat/' + roomName + '/');
 
 chatSocket.onmessage = function (e) {
