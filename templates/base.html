@@ -31,7 +31,7 @@
             <div class="container">
                 <a class="navbar-brand" href="javascript: void(0);">Online Chat</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" id="collapsableMenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -42,7 +42,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'index' %}">
+                            <a class="nav-link" href="javascript: void(0);" id="configButton">
                                 Config
                             </a>
                         </li>
@@ -62,5 +62,6 @@
             </div>
         </div>
         {% block js %}{% endblock %}
+        <script src="{% static 'script.js' %}" type="application/javascript"></script>
     </body>
 </html>
