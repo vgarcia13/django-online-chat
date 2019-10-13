@@ -7,7 +7,7 @@ var chatHistory = $('#msg_history');
 
 var chatSocket = new WebSocket(
     'wss://' + window.location.host +
-    '/ws/chat/' + roomName + '/');
+    '/wss/chat/' + roomName + '/');
 
 chatSocket.onmessage = function (e) {
     var data = JSON.parse(e.data);
