@@ -28,5 +28,6 @@ Django = "==2.2.5"
 channels = "*"
 channels-redis = "*"
 rq = "*"
+django-rq = "*"
 
 [dev-packages]

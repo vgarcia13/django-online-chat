@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'chat.apps.ChatConfig',
     'bootstrap4',
+    'django_rq'
 ]
 
 MIDDLEWARE = [
@@ -75,6 +76,13 @@ CHANNEL_LAYERS = {
             "hosts": [(REDIS_URL, 6379)],
         },
     },
+}
+
+RQ_QUEUES = {
+    'default': {
+        'URL': REDIS_URL,
+        'DEFAULT_TIMEOUT': 500,
+    }
 }
 
 

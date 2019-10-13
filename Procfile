@@ -1,2 +1,2 @@
 web: daphne -p $PORT online_chat.asgi:application
-worker: python worker.py
+worker: python manage.py rqworker default

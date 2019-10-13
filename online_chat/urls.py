@@ -7,4 +7,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
     path('chat/', include(('chat.urls', 'chat'), namespace='chat')),
+    path('django-rq/', include('django_rq.urls'))
 ]
