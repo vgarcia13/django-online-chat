@@ -2,23 +2,23 @@
 
 A simple chat project, with Django and Docker. Designed and developed by [Victor H. García](https://www.linkedin.com/in/victor-hugo-garcia-202b1b99/)
 
-##Features
+## Features
 
 - Real-time multi-browser chat room
 - Completely responsive (desktop, tablet, cellphone)
 
-##Usage
+## Usage
 
 - Just set your username to start chatting!
 
-##Requirements
+## Requirements
 
 The following must be installed to run this application:
 
 - GIT
 - Docker
 
-##Installation
+## Installation
 
 To use this project, follow these steps:
 
@@ -34,7 +34,7 @@ To use this project, follow these steps:
 - Finally, run `docker-compose up` at the project root
 - Open [http://0.0.0.0:8000/](http://0.0.0.0:8000/) in your browser to start chatting!
 
-##Examples of use
+## Examples of use
 
 - [Desktop Example](https://drive.google.com/open?id=1asjTYAUx4ZfhyxIIY4R-z43eH6ZMwIBl)
 - [Tablet Example](https://drive.google.com/open?id=1CH285xFkkMTbbXrG9qXbrRqM5MBGf4CU)
