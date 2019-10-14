@@ -37,7 +37,7 @@ To use this project, follow these steps:
 ## Examples of use
 
 - [Desktop Example](https://drive.google.com/open?id=1asjTYAUx4ZfhyxIIY4R-z43eH6ZMwIBl)
-- [Tablet Example](https://drive.google.com/open?id=1CH285xFkkMTbbXrG9qXbrRqM5MBGf4CU)
-- [Mobile Example](https://drive.google.com/open?id=1QF-LbRKbT0-9uO6v5KcsO4z65-kik6q6)
+- [Tablet Example](https://drive.google.com/open?id=1OY_qltPFa7xUrnvfcNRdVpz5rXLo8MX1)
+- [Mobile Example](https://drive.google.com/open?id=1XB40xq7lV6fiFpXYP0CBkrHlLEUSc71b)
 
     
