@@ -49,7 +49,7 @@ Twisted==19.7.0
 txaio==18.8.1
 typesystem==0.2.4
 urllib3==1.25.5
-uvicorn==0.8.6
+uvicorn==0.11.7
 uvloop==0.12.2
 websockets==7.0
 whitenoise==4.1.3
